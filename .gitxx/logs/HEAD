@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 0f1d671347b0b92796dabe72774cf58f86d25aa2 unknown <muhammad_akbar287@outlook.com> 1653414913 +0700	commit (initial): This is Initial commit. 25 May 2022 I finish JPA Repository and Blueprint to create Databases. Exclude Transactional Service
+0f1d671347b0b92796dabe72774cf58f86d25aa2 18ad4aa247815f2c86e4aed55d7d7dfde7651f76 unknown <muhammad_akbar287@outlook.com> 1653459711 +0700	merge origin/master: Fast-forward
+18ad4aa247815f2c86e4aed55d7d7dfde7651f76 3bcbe63156bffd241b2de16d039cecb964238e92 unknown <muhammad_akbar287@outlook.com> 1656654377 +0700	commit: Finish Mmeber Service, Saprotan Service

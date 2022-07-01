@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="allocation-service" />
+        <module name="credit-service" />
+        <module name="file-upload-service" />
+        <module name="eureka-server" />
+        <module name="scholarship-service" />
+        <module name="notification-service" />
+        <module name="planning-service" />
+        <module name="insurance-service" />
+        <module name="transactional-service" />
+        <module name="auth-service" />
+        <module name="accommodation-service" />
+        <module name="api-gateway" />
+        <module name="member-service" />
+        <module name="information-service" />
+        <module name="feign-service" />
+        <module name="market-service" />
+        <module name="client-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="feign-service" target="18" />
+      <module name="puber-service" target="18" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="accommodation-service" options="-parameters" />
+      <module name="allocation-service" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
+      <module name="backend" options="-parameters" />
+      <module name="client-service" options="-parameters" />
+      <module name="credit-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="feign-service" options="-parameters" />
+      <module name="file-upload-service" options="-parameters" />
+      <module name="information-service" options="-parameters" />
+      <module name="insurance-service" options="-parameters" />
+      <module name="market-service" options="-parameters" />
+      <module name="member-service" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="planning-service" options="-parameters" />
+      <module name="puber-service" options="-parameters" />
+      <module name="scholarship-service" options="-parameters" />
+      <module name="transactional-service" options="-parameters" />
+    </option>
+  </component>
+</project>

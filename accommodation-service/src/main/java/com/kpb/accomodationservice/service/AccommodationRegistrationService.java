@@ -1,0 +1,15 @@
+package com.kpb.accomodationservice.service;
+
+import com.kpb.accomodationservice.dto.AccommodationRegistrationCreateUpdateRequestDTO;
+import com.kpb.accomodationservice.dto.AccommodationRegistrationDetailResponseDTO;
+import com.kpb.accomodationservice.dto.AccommodationRegistrationListResponse;
+
+import java.util.List;
+
+public interface AccommodationRegistrationService {
+    public List<AccommodationRegistrationListResponse> accommodationRegistrationListResponse(Long accommodationId);
+    public AccommodationRegistrationDetailResponseDTO accommodationRegistrationDetailResponseDTO(Long accommodationRegistrationId);
+    public void createAccommodationRegistration(AccommodationRegistrationCreateUpdateRequestDTO accommodationRegistrationCreateUpdateRequestDTO);
+    public void updateAccommodationRegistration(Long accommodationRegistrationId, AccommodationRegistrationCreateUpdateRequestDTO accommodationRegistrationCreateUpdateRequestDTO);
+    public void deleteAccommodationRegistration(Long accommodationRegistrationId);
+}

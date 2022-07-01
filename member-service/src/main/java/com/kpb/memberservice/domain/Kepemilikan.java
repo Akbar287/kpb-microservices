@@ -1,0 +1,51 @@
+package com.kpb.memberservice.domain;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
+import lombok.Data;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import java.io.Serial;
+import java.io.Serializable;
+
+@Entity
+@Data
+@Table(name = "kepemilikan")
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
+public class Kepemilikan implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = -6283155325752959809L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long kepemilikanId;
+
+    @JsonIgnore
+    @OneToOne
+    @JoinColumn(name = "petani_id")
+    private Petani petani;
+
+    @Column(nullable = false, length = 16)
+    @NotNull(message = "house status cannot be null")
+    @NotEmpty(message = "house status cannot be empty")
+    private String statusRumah;
+
+    @Column(nullable = false, length = 16)
+    @NotNull(message = "land_status cannot be null")
+    @NotEmpty(message = "land_status cannot be empty")
+    private String statusTanah;
+
+    @Column(nullable = false, length = 16)
+    @NotNull(message = "electrical facilities cannot be null")
+    @NotEmpty(message = "electrical facilities cannot be empty")
+    private String fasilitasListrik;
+
+    @Column(nullable = false, length = 128)
+    @NotNull(message = "vehicle cannot be null")
+    @NotEmpty(message = "vehicle cannot be empty")
+    private String kendaraan;
+}
